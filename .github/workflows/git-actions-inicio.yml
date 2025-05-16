@@ -29,6 +29,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install pytest
 
+      - name: Verificar diretório test
+        run: |
+          ls ${{ github.workspace }}/test
+
       - name: Run Tests
         run: |
           pytest ${{ github.workspace }}/test
