@@ -19,6 +19,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
@@ -35,4 +38,4 @@ jobs:
 
       - name: Run Tests
         run: |
-          pytest ${{ github.workspace }}/test/
+          pytest ${{ github.workspace }}/test
