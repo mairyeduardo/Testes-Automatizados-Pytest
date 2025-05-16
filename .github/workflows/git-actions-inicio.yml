@@ -35,4 +35,4 @@ jobs:
 
       - name: Run Tests
         run: |
-          pytest ${{ github.workspace }}/test
+          pytest ${{ github.workspace }}/test/
