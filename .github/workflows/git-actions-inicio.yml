@@ -31,4 +31,4 @@ jobs:
 
       - name: Run Pytest
         run: |
-          pytest Pytest/10.Integracaoendtoend/1Integracao
+          pytest test
